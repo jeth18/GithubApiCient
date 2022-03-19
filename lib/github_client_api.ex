@@ -6,6 +6,7 @@ defmodule GithubClientApi do
   def user_repos(client, login) do
     # pass `client` argument to `Tesla.get` function
     Tesla.get(client, "/users/" <> login <> "/repos")
+
   end
 
   def issues(client) do
