@@ -25,7 +25,10 @@ defmodule GithubClientApi.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:tesla, "~> 1.4"},
       {:hackney, "~> 1.13"},
-      {:httpoison, "~> 1.4.0"}
+      {:httpoison, "~> 1.4.0"},
+      {:httpotion, "~> 3.1.0"},
+      {:jason, "~> 1.0"},
+      {:poison, "~> 5.0"}
 
     ]
   end

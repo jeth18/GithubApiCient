@@ -1,10 +1,8 @@
 defmodule Github do
-  HTTPoison.start
-  @username "MachinesAreUs"
-  @token "123"
-
+  HTTPotion.start
+  @username "jeth18"
   "https://api.github.com/users/#{@username}/repos"
-    |> HTTPoison.get(headers: [{"Authorization", "token " <> @token }, {"user-agent", "Tesla"}])
+    |> HTTPotion.get(headers: ["User-Agent": @username])
     |> Map.get(:body)
     |> Poison.decode!()
     |> Enum.each(fn repo ->
